@@ -9,6 +9,7 @@
 
 .box-example {
   background-color: #666;
+  box-sizing: border-box;
   border-radius: 5px;
   color: #fff;
   padding: 20px;
@@ -317,3 +318,504 @@
 }
 
 /*END EXAMPLE 12*/
+
+/*EXAMPLE 13*/
+
+.wrapper-example13 {
+  display: grid;
+  grid-gap: 20px;
+  grid-column: repeat(5, 1fr);
+  margin: 0 auto 50px;
+}
+
+.a13 {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+.b13 {
+  grid-column: 3 / span 3;
+  grid-row: 1;
+}
+
+.c13 {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.d13 {
+  grid-column: 2 / span 3;
+  grid-row: 2;
+}
+
+.e13 {
+  grid-column: 1 / span 5;
+  grid-row: 3;
+}
+
+.f13 {
+  background-color: rgb(41, 191, 52, 0.5);
+  grid-column: 3 / span 3;
+  grid-row: 2;
+  z-index: 1;
+}
+
+/*END EXAMPLE 13*/
+
+/*EXAMPLE 15*/
+
+.content14 {
+  grid-area: content14;
+  position: relative;
+}
+
+.wrapper-example14 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas: "header header header"
+                       "sidebar content14 content14"
+                       "footer footer footer";
+  margin-bottom: 50px;
+}
+
+.box-example14 {
+  background-color: #666;
+  border-radius: 5px;
+  color: #fff;
+  padding: 50px;
+}
+
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.topright {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.bottomright {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/*END EXAMPLE 14*/
+
+/*EXAMPLE 15*/
+
+.wrapper-example15 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(6, 1fr);
+  margin-bottom: 50px;
+}
+
+.box-example15 {
+  background-color: #666;
+  border-radius: 5px;
+  color: #fff;
+  padding: 20px;
+}
+
+.box-example15:nth-child(even) {
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #000;
+}
+
+/*END EXAMPLE 15*/
+
+/*EXAMPLE 16*/
+
+.wrapper-example16 {
+  width: 600px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-auto-flow: column;
+  margin-bottom: 50px;
+}
+
+/*END EXAMPLE 16*/
+
+/*EXAMPLE 17*/
+
+.box2-17 {
+  grid-column: 3 / span 2;
+  grid-row: 2;
+}
+
+.box6-17 {
+  grid-column: 1 / span 4;
+  grid-row: 1;
+}
+
+/*END EXAMPLE 17*/
+
+/*EXAMPLE 18*/
+
+.wrapper-example18 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, 100px);
+  margin-bottom: 50px;
+}
+
+.a18 {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+/*END EXAMPLE 19*/
+
+.wrapper-example19 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 50px;
+}
+
+.box-small19 {
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.a19 {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+.b19 {
+  grid-column: 3 / span 2;
+  grid-row: 1;
+}
+
+.c19 {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+}
+
+.d19 {
+  display: grid;
+  grid-column: 3 / span 2;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-row: 2;
+}
+
+.e19 {
+  grid-column: 1 / span 2;
+}
+
+/*END EXAMPLE 19*/
+
+/*EXAMPLE 20*/
+
+.wrapper-example20 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas: "header header header"
+                       "sidebar content content";
+  margin-bottom: 50px;
+}
+
+.overlay {
+  background-color: rgb(255, 0, 0, 0.7);
+  color: #fff;
+  border-radius: 5px;
+  grid-column: content-start / content-end;
+  grid-row: header-start / content-end;
+}
+
+/*END EXAMPLE 20*/
+
+/*EXAMPLE 21*/
+
+.wrapper-example21 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(8, 1fr);
+  margin-bottom: 50px;
+}
+
+.box-example21 {
+  background-color: #666;
+  border-radius: 5px;
+  color: #fff;
+  padding: 20px;
+}
+
+.box-example21:nth-child(even) {
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #000;
+}
+
+.a21 {
+  order: 3;
+}
+
+.b21 {
+  order: 2;
+}
+
+/*END EXAMPLE 21*/
+
+/*EXAMPLE 22*/
+
+.wrapper-example22 {
+  align-items: center;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  justify-items: stretch;
+  margin-bottom: 50px;
+}
+
+.a22 {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+
+.b22 {
+  grid-column: 3 / span 2;
+  grid-row: 1 / span 2;
+}
+
+.c22 {
+  grid-column: 1 / span 2;
+  grid-row: 3 / span 2;
+}
+
+.d22 {
+  grid-column: 3 / span 2;
+  grid-row: 3 / span 2;
+}
+
+.e22 {
+  align-self: stretch;
+  grid-column: 5 / span 2;
+  grid-row: 1 / span 4;
+}
+
+/*END EXAMPLE 22*/
+
+/*EXAMPLE 23*/
+
+.wrapper-example23 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  margin-bottom: 50px;
+}
+
+/*END EXAMPLE 23*/
+
+/*EXAMPLE 24*/
+
+.a24 {
+  grid-column: auto / span 2;
+}
+
+.g24 {
+  grid-column: auto / span 2;
+  grid-row: auto / span 2;
+}
+
+.k24 {
+  grid-column: auto / span 3;
+}
+
+/*END EXAMPLE 24*/
+
+/*EXAMPLE 25*/
+
+.wrapper-example25 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, [col] 100px);
+  grid-template-rows: repeat(auto-fill, [row] auto);
+  margin-bottom: 50px;
+}
+
+.a25 {
+  grid-column: col 1 / span 2;
+  grid-row: row 1;
+}
+
+.b25 {
+  grid-column: col 3 / span 2;
+  grid-row: row 1;
+}
+
+.c25 {
+  grid-column: col 1;
+  grid-row: row 2;
+}
+
+.d25 {
+  grid-column: col 2 / span 3;
+  grid-row: row 2;
+}
+
+.e25 {
+  grid-column: col 1 / span 4;
+  grid-row: row 3;
+}
+
+/*END EXAMPLE 25*/
+
+/*EXAMPLE 26*/
+
+.wrapper-example26 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: minmax(200px, 1fr) 200px 200px;
+  margin-bottom: 50px;
+}
+
+/*END EXAMPLE 26*/
+
+/*EXAMPLE 27*/
+
+.wrapper-example27 {
+
+  align-content: center;
+  border: 2px solid #000;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(4, [col] 50px);
+  grid-template-rows: repeat(3, [row] 50px);
+  height: 300px;
+  justify-content: center;
+  margin-bottom: 50px;
+  width: 300px;
+}
+
+.a27 {
+  grid-column: col 1 / span 4;
+  grid-row: row 1;
+}
+
+.b27 {
+  grid-column: col 1 / span 2;
+  grid-row: row 2 / span 2;
+}
+
+.c27 {
+  grid-column: col 3 / span 2;
+  grid-row: row 2;
+}
+
+.d27 {
+  grid-column: col 3 / span 2;
+  grid-row: row 3;
+}
+
+/*END EXAMPLE 27*/
+
+/*EXAMPLE 28*/
+
+.wrapper-example28 {
+  align-content: space-around;
+  border: 2px solid #000;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(4, [col] 50px);
+  grid-template-rows: repeat(3, [row] 50px);
+  height: 300px;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  width: 300px;
+}
+
+/*END EXAMPLE 28*/
+
+/*EXAMPLE 29*/
+.wrapper-example29 {
+  display: grid;
+  grid-gap: 20px;
+  /*At time of writing this does not work in Firefox. Try Chrome. Nov 19 2017*/
+  grid-template-columns: repeat(auto-fill, 100px 200px);
+  margin-bottom: 50px;
+}
+
+.box-example29 {
+  background-color: #666;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #fff;
+  padding: 20px;
+}
+
+.box-example29:nth-child(even) {
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #000;
+}
+
+/*END EXAMPLE 29*/
+
+/*EXAMPLE 30*/
+
+.wrapper-example30 {
+  display: grid;
+  grid-gap: 20px;
+  /*This expands the tracks till another min for both can fit onto the row.*/
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr) minmax(200px, 2fr));
+  margin-bottom: 50px;
+}
+
+/*END EXAMPLE 30*/
+
+/*EXAMPLE 31*/
+
+.wrapper-example31 {
+  border: 1px solid #000;
+  display: grid;
+  grid-gap: 2%;
+  grid-template-columns: repeat(6, 10%);
+  height: 50vh;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 50px;
+  margin: 0 auto;
+  width: 80%;
+
+}
+
+  /*END EXAMPLE 31*/
+
+  /*EXAMPLE 32*/
+
+.wrapper-example32-1 {
+  border-bottom: 1px solid #000;
+  display: grid;
+  grid-gap: 20px;
+  /*auto-fill keeps producing tracks at the minimum even if they are empty*/
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  padding-bottom: 14.5px;
+  margin-bottom: 14.5px
+}
+
+.wrapper-example32-2 {
+  display: grid;
+  grid-gap: 20px;
+  /*auto-fit fills the viewport; empty tracks are collapsed to zero*/
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  margin-bottom: 50px;
+}
